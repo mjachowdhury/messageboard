@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-message',
-  template: `This is the message component 
+  template: ` 
             <div *ngFor="let message of messages">
-            <mat-card>            
+            <mat-card style="margin:8px">            
                 <mat-card-title>{{message.owner}}</mat-card-title>  
             <mat-card-content>
                 {{message.text}}  
