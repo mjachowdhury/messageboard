@@ -4,9 +4,16 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-message',
   template: `This is the message component 
             <div *ngFor="let message of messages">
-            <mat-card>{{message.text}} by: {{message.owner}}</mat-card>
-                  <button mat-button>Click me!</button>
-            </div>`,
+            <mat-card>
+              <mat-card-header>
+              <mat-card-title>{{message.owner}}</mat-card-title> 
+              </mat-card-header>
+              <mat-card-content>
+              {{message.text}}  
+              </mat-card-content>
+            </mat-card>                   
+            </div>`
+    ,
             
   styleUrls: ['./message.component.css']
 })
